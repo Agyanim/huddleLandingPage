@@ -1,0 +1,112 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+}
+
+.huddle img{
+    width: 8em;
+    margin:10px 50px ;
+ 
+}
+.headings{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+
+    padding: auto;
+}
+.contentWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardImage img{
+    width: 45vw;
+}
+.zone{
+    margin: 10px 20px;
+}
+.cardBuild{
+    width: 35vw;
+    padding: 0 10px 80px 10px;
+}
+.cardBuild h2,p{
+    color: white;
+}
+.cardBuild p{
+    font-weight: 400px;
+}
+.cardBuild h2{
+    padding-bottom: 20px;
+    font-weight: 600px;
+}
+.register a{
+    background-color: white;
+    color: var(--Violet);
+    border-radius: 20px;
+    padding: 4px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    text-decoration: none;
+    font-size: 10px;
+}
+.register{
+    margin-top: 40px;
+}
+
+.socialAdress{
+    display: flex;
+    flex-direction: row;
+   margin-left: 80vw;
+}
+.socialAdress img{
+    width: 2em;
+    padding: 5px;
+}
+.attribution a{
+    color: rgb(253, 83, 176);
+}
+@media only screen and (max-width: 600px){
+    .contentWrapper{
+        flex-direction: column;
+    }
+  
+    .huddle img{
+        width: 6em;
+        margin:10px 2px ;
+     
+    }
+    
+    .cardImage img{
+        width: 80vw;
+    }
+    .cardBuild {
+        width: 80vw;
+        text-align: center;
+    }
+    .cardBuild p{
+        font-size: 9px;
+    }
+    .cardBuild h2{
+        font-size: 15px;
+        font-weight: 400px;
+    }
+    .socialAdress{
+        margin-left: 30vw;
+    }
+}
