@@ -15,8 +15,8 @@ body {
 }
 
 .huddle img {
-  width: 20em;
-  margin: 20px 50px;
+  width: 14em;
+  margin: 60px 55px;
 }
 .headings {
   font-family: "Poppins", sans-serif;
@@ -26,7 +26,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 10px;
-
   padding: auto;
 }
 .contentWrapper {
@@ -35,37 +34,38 @@ body {
   align-items: center;
 }
 .cardImage img {
-  width: 53vw;
+  width: 50vw;
 }
+
 .zone {
   margin: 10px 20px;
 }
 .cardBuild {
-  width: 47vw;
-  padding: 0 30px 80px 30px;
+  width: 38vw;
+  padding: 0 40px 80px 40px;
 }
 .cardBuild h2,
 p {
   color: white;
 }
 .cardBuild p {
-  font-weight: 400px;
-  font-size: 20px
+  font-weight: 300px;
+  font-size: 16px;
 }
 .cardBuild h2 {
   padding-bottom: 20px;
-  font-weight: 600px;
-  font-size: 3em;
+  font-weight: 400px;
+  font-size: 2.5em;
 }
 .register a {
   background-color: white;
   color: var(--Violet);
   border-radius: 40px;
-  padding: 15px 80px;
+  padding: 15px 70px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
 }
 .register {
   margin-top: 60px;
@@ -74,52 +74,78 @@ p {
 .socialAdress {
   display: flex;
   flex-direction: row;
-  margin-left: 80vw;
+  margin-left: 85vw;
 }
-.socialAdress img {
-  width: 5em;
-  padding: 5px;
+.socialAdress  {
+  width: 8em;
 }
+.socialAdress svg {
+  fill: white;
+}
+
+.socialAdress svg:active,.register a:active {
+  cursor: pointer;
+  fill: var(--SoftMagenta);
+ 
+}
+.register a:active {
+  cursor: pointer;
+  
+  background-color: var(--SoftMagenta);
+}
+
+
 .attribution a {
   color: rgb(253, 83, 176);
 }
 @media only screen and (max-width: 600px) {
+  body {
+    background-size: contain;
+    background-position: top;
+  
+   
+    
+  }
   .contentWrapper {
     flex-direction: column;
   }
 
   .huddle img {
-    width: 6em;
-    margin: 10px 2px;
+    width: 8em;
+    margin: 20px 2px;
   }
 
   .cardImage img {
-    width: 70vw;
+    width: 85vw;
     margin-bottom: 40px;
   }
   .cardBuild {
-    width: 70vw;
+    width: 90vw;
     text-align: center;
+    padding: 0 15px 0 15px;
   }
   .cardBuild p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .cardBuild h2 {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 400px;
   }
-  .register a{
-    font-size: 15px;
-    padding: 10px 50px;
+  .register a {
+    font-size: 12px;
+    padding: 10px 70px;
+    
   }
   .register {
-    margin-bottom: 0px;
+    margin-bottom: 80px;
+    margin-top: 30px;
   }
   .socialAdress {
     margin-left: 36vw;
     margin-top: 0;
+    margin-bottom: 30px;
+    width: 5.5em;
+   
   }
-  .socialAdress img{
-    width: 2em;
-  }
+
 }
