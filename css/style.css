@@ -103,6 +103,9 @@ body {
 
 
 /* footer */
+.attribution{
+  color: white;
+}
 .attribution a {
   color: rgb(253, 83, 176);
 }
