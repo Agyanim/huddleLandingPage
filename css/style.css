@@ -1,33 +1,46 @@
+/* Color variables */
 :root {
   --Violet: hsl(257, 40%, 49%);
   --SoftMagenta: hsl(300, 69%, 71%);
 }
+/* color variables end */
+/* Clear of margins and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Backgroud image and color */
 body {
   background-image: url(../images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--Violet);
 }
-
+/* end of backgroud image and color */
+/* Huddle */
 .huddle img {
   width: 14em;
   margin: 60px 55px;
 }
+/* end of huddle */
+/* Heading */
 .headings {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  color: white;
+  padding-bottom: 20px;
+  font-weight: 400px;
+  font-size: 2.5em;
 }
+/* end of heading */
+/* content of cardBuild */
 .body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  padding: auto;
+  font-weight: 300px;
+  font-size: 16px;
+  color: white;
 }
+/* card container */
 .contentWrapper {
   display: flex;
   justify-content: center;
@@ -44,19 +57,10 @@ body {
   width: 38vw;
   padding: 0 40px 80px 40px;
 }
-.cardBuild h2,
-p {
-  color: white;
-}
-.cardBuild p {
-  font-weight: 300px;
-  font-size: 16px;
-}
-.cardBuild h2 {
-  padding-bottom: 20px;
-  font-weight: 400px;
-  font-size: 2.5em;
-}
+
+/* End of card container */
+
+/* register button */
 .register a {
   background-color: white;
   color: var(--Violet);
@@ -70,51 +74,61 @@ p {
 .register {
   margin-top: 60px;
 }
+.register a:active {
+  cursor: pointer;  
+  background-color: var(--SoftMagenta);
+}
+/* end of register button */
 
-.socialAdress {
+/* social links */
+.socialAdress  {
   display: flex;
   flex-direction: row;
-  margin-left: 85vw;
-}
-.socialAdress  {
-  width: 8em;
+  margin-left: 82vw;
+ 
 }
 .socialAdress svg {
   fill: white;
+  width: 2em;
 }
 
+.socialAdress a {
+  padding-left: 15px;
+}
 .socialAdress svg:active,.register a:active {
   cursor: pointer;
   fill: var(--SoftMagenta);
- 
 }
-.register a:active {
-  cursor: pointer;
-  
-  background-color: var(--SoftMagenta);
-}
+/* end of social links */
 
 
+/* footer */
 .attribution a {
   color: rgb(253, 83, 176);
 }
+
+/* end of footer */
+
+/* Screen responsiveness */
 @media only screen and (max-width: 600px) {
   body {
     background-size: contain;
     background-position: top;
-  
-   
-    
   }
+  /* container of cards */
   .contentWrapper {
     flex-direction: column;
   }
+  /* end of container of cards */
 
+/* huddle */
   .huddle img {
     width: 8em;
     margin: 20px 2px;
   }
+  /* end of huddle */
 
+/* cards of container */
   .cardImage img {
     width: 85vw;
     margin-bottom: 40px;
@@ -124,13 +138,16 @@ p {
     text-align: center;
     padding: 0 15px 0 15px;
   }
-  .cardBuild p {
-    font-size: 16px;
-  }
-  .cardBuild h2 {
+  .headings{
     font-size: 25px;
     font-weight: 400px;
   }
+  .body {
+    font-size: 16px;
+  }
+  /* end of cards of container */
+
+  /* register buttom */
   .register a {
     font-size: 12px;
     padding: 10px 70px;
@@ -140,12 +157,19 @@ p {
     margin-bottom: 80px;
     margin-top: 30px;
   }
+  /* end of register button */
+  
+  /* social links */
   .socialAdress {
-    margin-left: 36vw;
+    margin-left: 30vw;
     margin-top: 0;
     margin-bottom: 30px;
-    width: 5.5em;
+  }
+  .socialAdress svg{
+    width: 2em;
    
   }
+  /* end of social links */
 
 }
+/* end of Screen responsiveness */
