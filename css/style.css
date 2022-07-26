@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--Violet);
+  height: 100vh;
 }
 /* end of backgroud image and color */
 /* Huddle */
